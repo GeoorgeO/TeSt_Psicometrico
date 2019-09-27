@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "santadeo_testpsicometrico", "santadeo_testpsicometrico\santadeo_testpsicometrico.vbproj", "{403A56C7-B413-458F-8250-40C917F30F9A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador_testSTadeo", "C:\Users\MZARAGOZA\Desktop\Instalador_testSTadeo\Instalador_testSTadeo.vdproj", "{CB6E13D2-1F99-444D-8089-790D8417AE4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{403A56C7-B413-458F-8250-40C917F30F9A}.Debug|x86.ActiveCfg = Debug|x86
+		{403A56C7-B413-458F-8250-40C917F30F9A}.Debug|x86.Build.0 = Debug|x86
+		{403A56C7-B413-458F-8250-40C917F30F9A}.Release|x86.ActiveCfg = Release|x86
+		{403A56C7-B413-458F-8250-40C917F30F9A}.Release|x86.Build.0 = Release|x86
+		{CB6E13D2-1F99-444D-8089-790D8417AE4E}.Debug|x86.ActiveCfg = Debug
+		{CB6E13D2-1F99-444D-8089-790D8417AE4E}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

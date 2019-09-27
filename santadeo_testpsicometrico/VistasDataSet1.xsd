@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VistasDataSet1" targetNamespace="http://tempuri.org/VistasDataSet1.xsd" xmlns:mstns="http://tempuri.org/VistasDataSet1.xsd" xmlns="http://tempuri.org/VistasDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="VistasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="VistasConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.santadeo_testpsicometrico.My.MySettings.GlobalReference.Default.VistasConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="rh_test_zavicTableAdapter" GeneratorDataComponentClassName="rh_test_zavicTableAdapter" Name="rh_test_zavic" UserDataComponentName="rh_test_zavicTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="VistasConnectionString (MySettings)" DbObjectName="Vistas.dbo.rh_test_zavic" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT t_totl_moral, t_tot_legalidad, t_tot_indiferencia, t_tot_corrupto, t_tot_economico, t_tot_politico, t_tot_social, t_tot_religioso FROM dbo.rh_test_zavic</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="t_totl_moral" DataSetColumn="t_totl_moral" />
+              <Mapping SourceColumn="t_tot_legalidad" DataSetColumn="t_tot_legalidad" />
+              <Mapping SourceColumn="t_tot_indiferencia" DataSetColumn="t_tot_indiferencia" />
+              <Mapping SourceColumn="t_tot_corrupto" DataSetColumn="t_tot_corrupto" />
+              <Mapping SourceColumn="t_tot_economico" DataSetColumn="t_tot_economico" />
+              <Mapping SourceColumn="t_tot_politico" DataSetColumn="t_tot_politico" />
+              <Mapping SourceColumn="t_tot_social" DataSetColumn="t_tot_social" />
+              <Mapping SourceColumn="t_tot_religioso" DataSetColumn="t_tot_religioso" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VistasDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VistasDataSet1" msprop:Generator_UserDSName="VistasDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rh_test_zavic" msprop:Generator_TableClassName="rh_test_zavicDataTable" msprop:Generator_TableVarName="tablerh_test_zavic" msprop:Generator_TablePropName="rh_test_zavic" msprop:Generator_RowDeletingName="rh_test_zavicRowDeleting" msprop:Generator_RowChangingName="rh_test_zavicRowChanging" msprop:Generator_RowEvHandlerName="rh_test_zavicRowChangeEventHandler" msprop:Generator_RowDeletedName="rh_test_zavicRowDeleted" msprop:Generator_UserTableName="rh_test_zavic" msprop:Generator_RowChangedName="rh_test_zavicRowChanged" msprop:Generator_RowEvArgName="rh_test_zavicRowChangeEvent" msprop:Generator_RowClassName="rh_test_zavicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="t_totl_moral" msprop:Generator_ColumnVarNameInTable="columnt_totl_moral" msprop:Generator_ColumnPropNameInRow="t_totl_moral" msprop:Generator_ColumnPropNameInTable="t_totl_moralColumn" msprop:Generator_UserColumnName="t_totl_moral" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_legalidad" msprop:Generator_ColumnVarNameInTable="columnt_tot_legalidad" msprop:Generator_ColumnPropNameInRow="t_tot_legalidad" msprop:Generator_ColumnPropNameInTable="t_tot_legalidadColumn" msprop:Generator_UserColumnName="t_tot_legalidad" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_indiferencia" msprop:Generator_ColumnVarNameInTable="columnt_tot_indiferencia" msprop:Generator_ColumnPropNameInRow="t_tot_indiferencia" msprop:Generator_ColumnPropNameInTable="t_tot_indiferenciaColumn" msprop:Generator_UserColumnName="t_tot_indiferencia" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_corrupto" msprop:Generator_ColumnVarNameInTable="columnt_tot_corrupto" msprop:Generator_ColumnPropNameInRow="t_tot_corrupto" msprop:Generator_ColumnPropNameInTable="t_tot_corruptoColumn" msprop:Generator_UserColumnName="t_tot_corrupto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_economico" msprop:Generator_ColumnVarNameInTable="columnt_tot_economico" msprop:Generator_ColumnPropNameInRow="t_tot_economico" msprop:Generator_ColumnPropNameInTable="t_tot_economicoColumn" msprop:Generator_UserColumnName="t_tot_economico" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_politico" msprop:Generator_ColumnVarNameInTable="columnt_tot_politico" msprop:Generator_ColumnPropNameInRow="t_tot_politico" msprop:Generator_ColumnPropNameInTable="t_tot_politicoColumn" msprop:Generator_UserColumnName="t_tot_politico" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_social" msprop:Generator_ColumnVarNameInTable="columnt_tot_social" msprop:Generator_ColumnPropNameInRow="t_tot_social" msprop:Generator_ColumnPropNameInTable="t_tot_socialColumn" msprop:Generator_UserColumnName="t_tot_social" type="xs:decimal" minOccurs="0" />
+              <xs:element name="t_tot_religioso" msprop:Generator_ColumnVarNameInTable="columnt_tot_religioso" msprop:Generator_ColumnPropNameInRow="t_tot_religioso" msprop:Generator_ColumnPropNameInTable="t_tot_religiosoColumn" msprop:Generator_UserColumnName="t_tot_religioso" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

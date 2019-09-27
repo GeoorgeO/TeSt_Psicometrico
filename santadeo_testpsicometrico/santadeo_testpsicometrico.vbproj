@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{403A56C7-B413-458F-8250-40C917F30F9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>santadeo_testpsicometrico.My.MyApplication</StartupObject>
+    <RootNamespace>santadeo_testpsicometrico</RootNamespace>
+    <AssemblyName>santadeo_testpsicometrico</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>santadeo_testpsicometrico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>santadeo_testpsicometrico.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_miniatura.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clases\Encriptacion.vb" />
+    <Compile Include="CLEAVER.Designer.vb">
+      <DependentUpon>CLEAVER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CLEAVER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion.vb" />
+    <Compile Include="DATOS_PERSONALES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS_PERSONALES.Designer.vb">
+      <DependentUpon>DATOS_PERSONALES.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio_carga.Designer.vb">
+      <DependentUpon>Inicio_carga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_carga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INSTRUCCIONES.Designer.vb">
+      <DependentUpon>INSTRUCCIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INSTRUCCIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="instruccion_preguntas.Designer.vb">
+      <DependentUpon>instruccion_preguntas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="instruccion_preguntas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuMainST.Designer.vb">
+      <DependentUpon>menuMainST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuMainST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registro1.Designer.vb">
+      <DependentUpon>registro1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte1.Designer.vb">
+      <DependentUpon>reporte1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reporte1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE1.Designer.vb">
+      <DependentUpon>SERIE1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE10.Designer.vb">
+      <DependentUpon>SERIE10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE2.Designer.vb">
+      <DependentUpon>SERIE2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE3.Designer.vb">
+      <DependentUpon>SERIE3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE4.Designer.vb">
+      <DependentUpon>SERIE4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE5.Designer.vb">
+      <DependentUpon>SERIE5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE6.Designer.vb">
+      <DependentUpon>SERIE6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE7.Designer.vb">
+      <DependentUpon>SERIE7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE8.Designer.vb">
+      <DependentUpon>SERIE8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERIE9.Designer.vb">
+      <DependentUpon>SERIE9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SERIE9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Zavic.Designer.vb">
+      <DependentUpon>Test_Zavic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Zavic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VistasDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CLEAVER.resx">
+      <DependentUpon>CLEAVER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS_PERSONALES.resx">
+      <DependentUpon>DATOS_PERSONALES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio_carga.resx">
+      <DependentUpon>Inicio_carga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSTRUCCIONES.resx">
+      <DependentUpon>INSTRUCCIONES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="instruccion_preguntas.resx">
+      <DependentUpon>instruccion_preguntas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuMainST.resx">
+      <DependentUpon>menuMainST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro1.resx">
+      <DependentUpon>registro1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="reporte1.resx">
+      <DependentUpon>reporte1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE1.resx">
+      <DependentUpon>SERIE1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE10.resx">
+      <DependentUpon>SERIE10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE2.resx">
+      <DependentUpon>SERIE2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE3.resx">
+      <DependentUpon>SERIE3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE4.resx">
+      <DependentUpon>SERIE4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE5.resx">
+      <DependentUpon>SERIE5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE6.resx">
+      <DependentUpon>SERIE6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE7.resx">
+      <DependentUpon>SERIE7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE8.resx">
+      <DependentUpon>SERIE8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERIE9.resx">
+      <DependentUpon>SERIE9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Zavic.resx">
+      <DependentUpon>Test_Zavic.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boton_ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="system-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bguardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo-crop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logosantadeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="boton_iniciar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="animacion3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VistasDataSet.xsc">
+      <DependentUpon>VistasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VistasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VistasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VistasDataSet.xss">
+      <DependentUpon>VistasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Word_2013_Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logoblackmini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logowhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-158150_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_miniatura.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -16,7 +16,7 @@ Module Conexion
     'FUNCION DE CONEXION A LA BASE DE DATOS SQL SERVER' 
     Sub abrir()
         Try
-            conexiones = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=inventumc762$")
+            conexiones = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
             conexiones.Open()
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error de conexion")

@@ -354,7 +354,7 @@ Public Class SERIE7
             End If
             '************************************'
             Try
-                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=inventumc762$")
+                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
                     cnx.Open()
                     Using cmd As New SqlCommand()
                         cmd.Connection = cnx
@@ -397,7 +397,7 @@ Public Class SERIE7
         End If
     End Sub
 
-    
+
 
     Private Sub btguardar7_Click(sender As System.Object, e As System.EventArgs) Handles btguardar7.Click
         Dim resp1 As String = ""
@@ -702,7 +702,7 @@ Public Class SERIE7
         End If
         '************************************'
         Try
-            Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=inventumc762$")
+            Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
                 cnx.Open()
                 Using cmd As New SqlCommand()
                     cmd.Connection = cnx

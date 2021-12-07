@@ -44,8 +44,8 @@ Public Class INSTRUCCIONES
             MessageBox.Show("Faltan información requerida, proporciónela por favor")
         Else
             Try
-                Dim query As String = "select rh_nombre_candidato from vistas.dbo.rh_candidatos_empleos where id_candidato=" + txtSuId.Text
-                Dim query2 As String = "select id_candidato from vistas.dbo.rh_candidatos_empleos where id_candidato=" + txtSuId.Text
+                Dim query As String = "select rh_nombre_candidato from Vistas.dbo.rh_candidatos_empleos where id_candidato=" + txtSuId.Text
+                Dim query2 As String = "select id_candidato from Vistas.dbo.rh_candidatos_empleos where id_candidato=" + txtSuId.Text
                 Dim comando As SqlCommand
                 Dim comando2 As SqlCommand
                 Dim lector As SqlDataReader
@@ -68,7 +68,7 @@ Public Class INSTRUCCIONES
                     resid = CStr(lector2(0).ToString)
                     If txtNombre.Text = resnombre Then
                         lector2.Close()
-                        Dim query3 As String = "select id_candidato from vistas.dbo.rh_test_merril where id_candidato=" + resid
+                        Dim query3 As String = "select id_candidato from Vistas.dbo.rh_test_merril where id_candidato=" + resid
                         Dim comando3 As SqlCommand
                         Dim lector3 As SqlDataReader
                         comando3 = New SqlCommand(query3, conexiones) 'esto verifica si se encuentra o no el id ingresado para agragarlo o no a la BD

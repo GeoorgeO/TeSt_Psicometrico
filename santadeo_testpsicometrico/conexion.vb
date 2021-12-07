@@ -16,7 +16,7 @@ Module Conexion
     'FUNCION DE CONEXION A LA BASE DE DATOS SQL SERVER' 
     Sub abrir()
         Try
-            conexiones = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
+            conexiones = New SqlConnection("Data Source=192.168.3.127;Initial Catalog=Vistas;User ID=sa;Password=$3rv3r5q10621%")
             conexiones.Open()
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical, "Error de conexion")
@@ -87,7 +87,7 @@ Module Conexion
 
         Try
             abrir()
-            Dim query5 As String = "select id_candidato from vistas.dbo.rh_candidatos_empleos where rh_nombre_candidato='" & nombreC & "'"
+            Dim query5 As String = "select id_candidato from Vistas.dbo.rh_candidatos_empleos where rh_nombre_candidato='" & nombreC & "'"
             Dim comando5 As SqlCommand
             Dim lector5 As SqlDataReader
             comando5 = New SqlCommand(query5, conexiones) 'esto verifica si se encuentra o no el id ingresado para agragarlo o no a la BD

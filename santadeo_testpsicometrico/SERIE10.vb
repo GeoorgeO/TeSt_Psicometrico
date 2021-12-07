@@ -311,7 +311,7 @@ Public Class SERIE10
             TotalyCI(INSTRUCCIONES.total_Respuestas, ci)
 
             Try
-                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
+                Using cnx = New SqlConnection("Data Source=192.168.3.127;Initial Catalog=vistas_AG;User ID=sa;Password=$3rv3r5q10621%")
                     cnx.Open()
                     Using cmd As New SqlCommand()
                         cmd.Connection = cnx
@@ -605,7 +605,7 @@ Public Class SERIE10
         'calculaRango(registro1.identificador)
         TotalyCI(INSTRUCCIONES.total_Respuestas, ci)
         Try
-            Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$d45q1w1n2#")
+            Using cnx = New SqlConnection("Data Source=192.168.3.127;Initial Catalog=vistas_AG;User ID=sa;Password=$3rv3r5q10621%")
                 cnx.Open()
                 Using cmd As New SqlCommand()
                     cmd.Connection = cnx

@@ -217,6 +217,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VistasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VistasDataSet.vb">
+      <DependentUpon>VistasDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CLEAVER.resx">

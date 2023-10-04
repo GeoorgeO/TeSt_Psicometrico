@@ -379,7 +379,7 @@ Public Class SERIE9
             End If
             '************************************
             Try
-                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$3rv3r5q10621%")
+                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas_Campo;User ID=sa;Password=$3rv3r5q10621%")
                     cnx.Open()
                     Using cmd As New SqlCommand()
                         cmd.Connection = cnx
@@ -748,7 +748,7 @@ Public Class SERIE9
         End If
         '************************************
         Try
-            Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas;User ID=sa;Password=$3rv3r5q10621%")
+            Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas_Campo;User ID=sa;Password=$3rv3r5q10621%")
                 cnx.Open()
                 Using cmd As New SqlCommand()
                     cmd.Connection = cnx

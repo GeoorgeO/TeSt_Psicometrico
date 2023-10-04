@@ -3156,7 +3156,7 @@ Public Class CLEAVER
             cumpliminetol = CInt(lbl6.Text) + CInt(lbl16.Text) + CInt(lbl20.Text) + CInt(lbl26.Text) + CInt(lbl34.Text) + CInt(lbl46.Text) + CInt(lbl62.Text) + CInt(lbl68.Text) + CInt(lbl88.Text) + CInt(lbl94.Text) + CInt(lbl100.Text) + CInt(lbl120.Text) + CInt(lbl142.Text) + CInt(lbl156.Text) + CInt(lbl166.Text) + CInt(lbl192.Text)
 
             Try
-                Using cnx = New SqlConnection("Data Source=192.168.3.127;Initial Catalog=Vistas;User ID=sa;Password=$3rv3r5q10621%")
+                Using cnx = New SqlConnection("Data Source=192.168.3.254;Initial Catalog=Vistas_Campo;User ID=sa;Password=$3rv3r5q10621%")
                     cnx.Open()
                     Using cmd As New SqlCommand()
                         cmd.Connection = cnx
